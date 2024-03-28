@@ -1,11 +1,11 @@
 <?php
 session_start();
-include("../../../connection/conn.php");
+include ("../../../connection/conn.php");
 
 $key = $_SESSION['key'];
 $order_place = $_SESSION['order-place'];
 
-if (isset($_POST['prev-map'])) {
+if (isset ($_POST['prev-map'])) {
     $page = $_GET['p'];
     $origin = $_POST['origin'];
     $destination = $_POST['destination'];
@@ -30,10 +30,10 @@ if (isset($_POST['prev-map'])) {
     $_SESSION['lat-destination'] = $row_destination[0];
     $_SESSION['lng-destination'] = $row_destination[1];
 
-    header("Location: ../../../view-pathDetail.php?p=" . $destination - 1);
+    header("Location: ../../view-pathDetail.php?p=" . $destination - 1);
 }
 
-if (isset($_POST['next-map'])) {
+if (isset ($_POST['next-map'])) {
     $page = $_GET['p'];
     $origin = $_POST['origin'];
     $destination = $_POST['destination'];
@@ -58,6 +58,6 @@ if (isset($_POST['next-map'])) {
     $_SESSION['lat-destination'] = $row_destination[0];
     $_SESSION['lng-destination'] = $row_destination[1];
 
-    header("Location: ../../../view-pathDetail.php?p=" . $origin);
+    header("Location: ../../view-pathDetail.php?p=" . $origin);
 }
 ?>

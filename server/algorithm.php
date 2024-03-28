@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['search'])) {
+if (isset ($_POST['search'])) {
     $start_station = $_POST['start'];
     $end = $_POST['end'];
 
@@ -10,7 +10,7 @@ if (isset($_POST['search'])) {
     $service = 1;
     $ID = $_SESSION['ID'];
 
-    include_once("code_station.php");
+    include_once ("code_station.php");
 
     $station = $code_station[$start_station];
 
@@ -160,10 +160,11 @@ if (isset($_POST['search'])) {
                 $_SESSION['key'] = $key;
                 $_SESSION['order-place'] = $order_place;
 
-                $start_station = $_SESSION['start_station'];
-                $end = $_SESSION['end'];
-                $start_time = $_SESSION['start_time'];
-                $end_time = $_SESSION['end_time'];
+                $_SESSION['start_station'] = $start_station;
+                $_SESSION['end'] = $end;
+                $_SESSION['start_time'] = $start_time;
+                $_SESSION['end_time'] = $end_time;
+
             }
         }
     } else {

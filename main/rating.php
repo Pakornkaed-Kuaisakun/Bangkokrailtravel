@@ -76,6 +76,7 @@
 
     <form method="post">
         <div class="rating-container">
+            <h4 class="mb-4 fw-bold">Please choose your satisfaction.</h4>
             <div class="row g-3 align-items-center mb-2">
                 <div class="col-4">
                     <label for="slider1" class="col-form-label fw-bold">Adventure</label>
