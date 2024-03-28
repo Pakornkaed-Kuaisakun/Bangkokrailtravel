@@ -1,2 +1,2 @@
 # Bangkokrailtravel
- งานรีบมากๆ ใช้เวลาประมาณ 1 อาทิตย์
+ The system for serching tourist attraction in Bangkok that near by BTS 13 stations
